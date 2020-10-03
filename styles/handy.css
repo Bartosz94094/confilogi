@@ -1,0 +1,19 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*basic font size*/
+html {
+    font-size: 18px;
+}
+
+/*colors - variables*/
+:root {
+    --bright-blue: hsl(231, 69%, 60%);
+    --dark-blue: hsl(229, 31%, 21%);
+    --bright-red: hsl(0, 94%, 66%);
+    --grey: hsl(229, 8%, 60%);
+}
