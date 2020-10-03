@@ -1,0 +1,83 @@
+.introduction {
+    width: 60%;
+    margin: 120px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduction>.text-wrapper {
+    width: 50%;
+    padding-right: 5%;
+}
+
+.introduction h1, .introduction p, .introduction a {
+    font-family: 'Rubik', sans-serif;
+}
+
+.introduction p, .introduction a {
+    font-size: 1rem;
+}
+
+.introduction p {
+    margin: 30px 0;
+    color: var(--grey);
+}
+
+.introduction .buttons-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.introduction a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--bright-blue);
+    padding: 10px 30px;
+    border: 2px solid var(--bright-blue);
+    border-radius: 5px;
+    transition: 0.3s color, 0.3s background-color;
+}
+
+.introduction a:hover {
+    background-color: white;
+    color: var(--bright-blue);
+}
+
+.introduction a:nth-child(2) {
+    margin-left: 10px;
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    transition: 0.3s border-color;
+}
+
+.introduction a:nth-child(2):hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.introduction>.image-wrapper {
+    width: 50%;
+    position: relative;
+}
+
+.introduction>.image-wrapper::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 80%;
+    border-bottom-left-radius: 20%;
+    background-color: var(--bright-blue);
+    transform: translateY(-5%);
+}
+
+.introduction>.image-wrapper>img {
+    display: block;
+    width: 100%;
+}
