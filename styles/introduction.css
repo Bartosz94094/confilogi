@@ -11,14 +11,6 @@
     padding-right: 5%;
 }
 
-.introduction h1, .introduction p, .introduction a {
-    font-family: 'Rubik', sans-serif;
-}
-
-.introduction p, .introduction a {
-    font-size: 1rem;
-}
-
 .introduction p {
     margin: 30px 0;
     color: var(--grey);
@@ -31,7 +23,6 @@
 
 .introduction a {
     display: block;
-    text-decoration: none;
     color: white;
     background-color: var(--bright-blue);
     padding: 10px 30px;

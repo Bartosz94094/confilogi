@@ -17,3 +17,17 @@ html {
     --bright-red: hsl(0, 94%, 66%);
     --grey: hsl(229, 8%, 60%);
 }
+
+/*set fonts, basic color and delete underlines*/
+p, a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, p {
+    font-size: 1rem;
+}

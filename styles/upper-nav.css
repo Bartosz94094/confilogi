@@ -18,11 +18,6 @@
 
 .upper-nav a {
     display: block;
-    text-decoration: none;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    color: black;
     transition: 0.3s color;
 }
 
