@@ -1,0 +1,79 @@
+.faq {
+    width: 30%;
+    margin: 120px auto 0 auto;
+    text-align: center;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.faq>.description>p {
+    text-align: center;
+    margin: 30px auto 50px auto;
+    color: var(--grey);
+}
+
+.question {
+    border-top: 1px solid var(--grey);
+}
+
+.question:nth-last-child(1) {
+    border-bottom: 1px solid var(--grey);
+}
+
+.question>button {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 20px 20px 20px 0;
+    cursor: pointer;
+}
+
+.question>button.show>svg {
+    transform: rotate(180deg);
+}
+
+.question>button.show path {
+    stroke: var(--bright-red);
+}
+
+.question>button>p {
+    transition: 0.3s color;
+}
+
+.question>button:hover>p {
+    color: var(--bright-red);
+}
+
+.question>p {
+    text-align: left;
+    display: none;
+    color: var(--grey);
+    padding-bottom: 20px;
+}
+
+.question>p.show {
+    display: block;
+}
+
+.faq>.info {
+    display: inline-block;
+    margin: 20px auto;
+    color: white;
+    background-color: var(--bright-blue);
+    padding: 10px 30px;
+    border: 2px solid var(--bright-blue);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s color, 0.3s background-color;
+}
+
+.faq>.info:hover {
+    background-color: white;
+    color: var(--bright-blue);
+}

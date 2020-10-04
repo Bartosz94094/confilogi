@@ -50,7 +50,14 @@ window.addEventListener('load', () => {
         })
     })
 
+    const showButtons = [...document.querySelectorAll(".question>button")];
+    const faqAnswers = [...document.querySelectorAll(".question>p")];
 
-
+    showButtons.forEach((button, index)=> {
+        button.addEventListener("click", (event)=>{
+            faqAnswers[index].classList.toggle("show");
+            button.classList.toggle("show");
+        })
+    })
 
 });
