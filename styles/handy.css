@@ -19,7 +19,7 @@ html {
 }
 
 /*set fonts, basic color and delete underlines*/
-p, a, h1, h2, h3, h4, h5, h6, button {
+p, a, h1, h2, h3, h4, h5, h6, button, input {
     font-family: 'Rubik', sans-serif;
     color: black;
 }
