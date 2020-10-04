@@ -1,0 +1,72 @@
+.download {
+    width: 60%;
+    margin: 200px auto 0 auto;
+}
+
+.download h2 {
+    text-align: center;
+}
+
+.download>.description>p {
+    text-align: center;
+    margin: 30px auto;
+    width: 50%;
+    color: var(--grey);
+}
+
+.browsers-wrapper {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.browser {
+    width: 32%;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.15); 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.browser:nth-child(1) {
+    transform: translateY(-10%);
+}
+
+.browser:nth-child(3) {
+    transform: translateY(10%);
+}
+
+.browser>.logo {
+    width: 40%;
+    margin: 30px 0;
+}
+
+.browser>p {
+    margin: 10px 0 30px 0;
+    color: var(--grey);
+}
+
+.browser>.border {
+    width: 100%;
+}
+
+.browser>button {
+    display: block;
+    margin: 20px 0;
+    color: white;
+    background-color: var(--bright-blue);
+    padding: 10px 30px;
+    border: 2px solid var(--bright-blue);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s color, 0.3s background-color;
+}
+
+.browser>button:hover {
+    background-color: white;
+    color: var(--bright-blue);
+}
