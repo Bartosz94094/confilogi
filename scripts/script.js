@@ -16,9 +16,9 @@ window.addEventListener('load', () => {
     const secondDescription = "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.";
     const thirdDescription = "Easily share your bookmarks and collections with others. Create a sharable link that you can send at the click of a button.";
 
-    const firstImage = "/images/illustration-features-tab-1.svg";
-    const secondImage = "/images/illustration-features-tab-2.svg";
-    const thirdImage = "/images/illustration-features-tab-3.svg";
+    const firstImage = "images/illustration-features-tab-1.svg";
+    const secondImage = "images/illustration-features-tab-2.svg";
+    const thirdImage = "images/illustration-features-tab-3.svg";
 
     function removeHighlightFromButtons() {
         featuresButtons.forEach((button)=> {
