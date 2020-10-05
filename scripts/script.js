@@ -103,4 +103,36 @@ window.addEventListener('load', () => {
         
     })
 
+    //modal
+    const modal = document.querySelector(".modal");
+    const closeModalBtn = document.querySelector(".close-modal");
+
+    closeModalBtn.addEventListener("click", ()=>{
+        modal.classList.remove("show");
+    })
+
+    let modalWasVisible = false;
+    let modalStartTime = 0;
+    const modalEndTime = 30;
+
+    const modalStartCounting = setInterval(()=>{
+        modalStartTime++;
+        if(modalStartTime == modalEndTime) {
+            clearInterval(modalStartCounting);
+
+            if(!modalWasVisible) {
+                modal.classList.add("show");
+                modalWasVisible = true;
+            }
+
+        }
+    }, 1000);
+
+    const upperNav = document.querySelector(".upper-nav");
+    upperNav.addEventListener("mouseover", ()=>{
+        if(!modalWasVisible) {
+            modal.classList.add("show");
+            modalWasVisible = true;
+        }
+    })
 });
