@@ -3,9 +3,10 @@ window.addEventListener('load', () => {
     //switch tabs (features section)
     
     const featuresButtons = [...document.querySelectorAll(".features>.buttons-wrapper>button")];
-    const tabHeader = document.querySelector(".tab h1");
+    const tabHeader = document.querySelector(".tab h3");
     const tabDescription = document.querySelector(".tab p");
     const tabImage = document.querySelector(".tab>.image-wrapper>img");
+    const tabImageWrapper = document.querySelector(".tab>.image-wrapper");
 
     const firstHeader = "Bookmark in one click";
     const secondHeader = "Intelligent search";
@@ -35,16 +36,19 @@ window.addEventListener('load', () => {
                     tabHeader.innerHTML= firstHeader;
                     tabDescription.innerHTML= firstDescription;
                     tabImage.src = firstImage;
+                    tabImageWrapper.classList.remove("resize");
                     break;
                 case 1:
                     tabHeader.innerHTML= secondHeader;
                     tabDescription.innerHTML= secondDescription;
                     tabImage.src = secondImage;
+                    tabImageWrapper.classList.add("resize");
                     break;
                 case 2:
                     tabHeader.innerHTML= thirdHeader;
                     tabDescription.innerHTML = thirdDescription;
                     tabImage.src = thirdImage;
+                    tabImageWrapper.classList.add("resize");
                     break;
                 default:
                     break;
