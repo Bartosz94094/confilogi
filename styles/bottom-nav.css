@@ -56,14 +56,14 @@
     color: var(--bright-red);
 }
 
-.first-line .logo-btn path {
+.bottom-nav .first-line .logo-btn path {
     fill: white;
 }
 
-.last-line a path {
+.bottom-nav .last-line a path {
     transition: 0.3s fill;
 }
 
-.last-line a:hover path {
-    fill: var(--bright-red);;
+.bottom-nav .last-line a:hover path {
+    fill: var(--bright-red);
 }

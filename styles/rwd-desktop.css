@@ -1,0 +1,40 @@
+@media(max-width: 1600px) and (orientation: landscape) {
+
+    .upper-nav {
+        width: 70%;
+        padding-right: 5%;
+    }
+
+    .bottom-nav ul {
+        width: 35%;
+    }
+
+    .introduction, .features, .download {
+        width: 70%;
+    }
+
+    .faq {
+        width: 35%;
+    }
+}
+
+@media(max-width: 1536px) and (orientation: landscape) {
+    footer>.wrapper {
+        width: 35%;
+    }
+}
+
+@media(max-width: 1440px) and (orientation: landscape) {
+    .upper-nav, .introduction, .features, .download {
+        width: 80%;
+    }
+
+    .introduction>.image-wrapper::before {
+        right: -45%;
+        width: 100%;
+    }
+
+    .features>.tab>.image-wrapper::before {
+        width: 120%;
+    }
+}
