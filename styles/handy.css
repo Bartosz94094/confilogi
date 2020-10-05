@@ -8,6 +8,7 @@
 /*basic font size*/
 html {
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 /*colors - variables*/
